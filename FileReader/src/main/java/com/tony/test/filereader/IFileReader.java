@@ -5,6 +5,8 @@
  */
 package com.tony.test.filereader;
 
+import java.io.FileNotFoundException;
+
 /**
  *
  * @author tonydixon
@@ -15,7 +17,8 @@ public interface IFileReader {
      * Parses the file
      * 
      * @param filename 
+     * @throws java.io.FileNotFoundException 
      */
-    public void parse(final String filename);
+    public void parse(final String filename) throws FileNotFoundException;
     
 }

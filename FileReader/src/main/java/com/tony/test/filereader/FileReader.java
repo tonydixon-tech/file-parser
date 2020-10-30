@@ -6,19 +6,19 @@
 package com.tony.test.filereader;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 /**
  *
  * @author tonydixon
  */
-public class FileReader implements IFileReader{
+public class FileReader implements IFileReader {
 
     @Override
-    public void parse(String filename) {try{
-         = new Scanner(new File(filename));
+    public void parse(String filename) throws FileNotFoundException {
+
+        Scanner scan = new Scanner(new File(filename));
     }
 
-
-    
 }
