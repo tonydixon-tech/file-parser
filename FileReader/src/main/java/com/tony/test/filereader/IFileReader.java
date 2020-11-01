@@ -17,8 +17,15 @@ public interface IFileReader {
      * Parses the file
      * 
      * @param filename 
+     * @return  the bytes read
      * @throws java.io.FileNotFoundException 
      */
-    public void parse(final String filename) throws FileNotFoundException;
+    public long parse(final String filename) throws FileNotFoundException;
     
+    /**
+     * Print out the word statistics
+     */
+    public void print_stats();
+    
+   
 }
